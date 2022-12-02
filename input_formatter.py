@@ -16,6 +16,14 @@ def get_input_as_numbers(day, year, is_sample):
     return [int_or_null(x) for x in get_input(day, year, is_sample)]
 
 
+def get_deliminated_input(day, year, is_sample, deliminator):
+    output = []
+    for line in get_input(day, year, is_sample):
+        output.append(line.split(deliminator))
+
+    return output
+
+
 def int_or_null(value):
     try:
         int(value)
