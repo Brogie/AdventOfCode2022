@@ -23,10 +23,10 @@ def validate():
 
 def save_sample_file(day, year):
     Path(f"inputs").mkdir(exist_ok=True)
-    Path(f"inputs/{year}").mkdir(exist_ok=True)
-    Path(f"inputs/{year}/day{day}").mkdir(exist_ok=True)
+    Path(f"inputs/year{year}").mkdir(exist_ok=True)
+    Path(f"inputs/year{year}/day{day}").mkdir(exist_ok=True)
 
-    filename = f"inputs/{year}/day{day}/sample.txt"
+    filename = f"inputs/year{year}/day{day}/sample.txt"
     if not Path(filename).is_file():
         print("Enter sample data:")
         lines = []
@@ -47,18 +47,18 @@ def save_sample_file(day, year):
 
 
 def save_input_file(day, year, session):
-    Path(f"inputs").mkdir(exist_ok=True)
-    Path(f"inputs/{year}").mkdir(exist_ok=True)
-    Path(f"inputs/{year}/day{day}").mkdir(exist_ok=True)
+    Path("inputs").mkdir(exist_ok=True)
+    Path(f"inputs/year{year}").mkdir(exist_ok=True)
+    Path(f"inputs/year{year}/day{day}").mkdir(exist_ok=True)
 
-    filename = f"inputs/{year}/day{day}/input.txt"
+    filename = f"inputs/year{year}/day{day}/input.txt"
     if not Path(filename).is_file():
         response = requests.get(
             f"https://adventofcode.com/{year}/day/{day}/input",
             cookies={"session": session})
         if not response.ok:
             if response.status_code == 404:
-                raise FileNotFoundError(response.text)
+                raise FileNotFoundError(response.text + response.url)
             raise RuntimeError(f"Request failed, code: {response.status_code}, message: {response.content}")
         else:
             with open(filename, "w") as file:
@@ -70,8 +70,8 @@ def save_input_file(day, year, session):
 
 def generate_solution_file(day, year):
     Path(f"solutions").mkdir(exist_ok=True)
-    Path(f"solutions/{year}").mkdir(exist_ok=True)
-    Path(f"solutions/{year}/day{day}").mkdir(exist_ok=True)
+    Path(f"solutions/year{year}").mkdir(exist_ok=True)
+    Path(f"solutions/year{year}/day{day}").mkdir(exist_ok=True)
 
 
 if __name__ == '__main__':

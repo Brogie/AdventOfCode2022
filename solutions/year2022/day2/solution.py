@@ -1,3 +1,4 @@
+import time
 from input_formatter import get_deliminated_input, get_input
 
 
@@ -47,8 +48,8 @@ def play_game_new_rules_2(game):
         case "C Z": return 7
 
 
-def part1():
-    data = get_deliminated_input(2, 2022, False, " ")
+def part1(is_sample):
+    data = get_deliminated_input(2, 2022, is_sample, " ")
     score = 0
 
     for game in data:
@@ -57,8 +58,8 @@ def part1():
     return score
 
 
-def part2():
-    data = get_deliminated_input(2, 2022, False, " ")
+def part2(is_sample):
+    data = get_deliminated_input(2, 2022, is_sample, " ")
     score = 0
 
     for game in data:
@@ -67,8 +68,8 @@ def part2():
     return score
 
 
-def part2_cleaner():
-    data = get_input(2, 2022, False)
+def part2_cleaner(is_sample):
+    data = get_input(2, 2022, is_sample)
     score = 0
 
     for game in data:
@@ -77,6 +78,26 @@ def part2_cleaner():
     return score
 
 
-print(part1())
-print(part2())
-print(part2_cleaner())
+timings = []
+
+start = time.time()
+for _ in range(100):
+    ans = part1(False)
+end = time.time()
+timings.append(["Day 2", "Part 1", ans, (end - start) / 100])
+
+start = time.time()
+for _ in range(100):
+    ans = part2(False)
+end = time.time()
+timings.append(["Day 2", "Part 2", ans, (end - start) / 100])
+
+start = time.time()
+for _ in range(100):
+    ans = part2_cleaner(False)
+end = time.time()
+timings.append(["Day 2", "Part 2 (Refined)", ans, (end - start) / 100])
+
+print(part1(False))
+print(part2(False))
+print(part2_cleaner(False))

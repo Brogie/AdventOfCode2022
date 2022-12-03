@@ -132,3 +132,4 @@ dmypy.json
 /template.py
 /inputs/
 .idea/
+/example_template.py

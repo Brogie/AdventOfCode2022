@@ -1,8 +1,14 @@
+import os
+
+
 def get_input_raw(day, year, is_sample):
-    if is_sample:
-        filename = f"../../../inputs/{year}/day{day}/sample.txt"
+    if "AdventOfCode2022/solutions/" not in os.getcwd():
+        filename = f"./inputs/year{year}/day{day}/input.txt"
     else:
-        filename = f"../../../inputs/{year}/day{day}/input.txt"
+        if is_sample:
+            filename = f"../../../inputs/year{year}/day{day}/sample.txt"
+        else:
+            filename = f"../../../inputs/year{year}/day{day}/input.txt"
 
     with open(filename) as file:
         return file.read()
