@@ -2,11 +2,13 @@ from tabulate import tabulate
 import solutions.year2022.day1.solution
 import solutions.year2022.day2.solution
 import solutions.year2022.day3.solution
+import solutions.year2022.day4.solution
 
 headers = ["Day", "Part", "Answer", "Time"]
 data = solutions.year2022.day1.solution.timings + \
        solutions.year2022.day2.solution.timings + \
-       solutions.year2022.day3.solution.timings
+       solutions.year2022.day3.solution.timings + \
+       solutions.year2022.day4.solution.timings
 
 table = tabulate(data, headers, tablefmt="github")
 

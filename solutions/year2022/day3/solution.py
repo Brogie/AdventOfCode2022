@@ -2,6 +2,8 @@ import time
 import numpy as np
 from input_formatter import get_input
 
+timings = []
+
 
 def find_dupe(compartment1, compartment2):
     for item in compartment1:
@@ -42,19 +44,19 @@ def part2(is_sample):
     return total_priority
 
 
-timings = []
+if __name__ == '__main__':
+    print(part1(False))
+    print(part2(False))
+else:
+    start = time.time()
+    for _ in range(100):
+        ans = part1(False)
+    end = time.time()
+    timings.append(["Day 3", "Part 1", ans, (end - start) / 100])
 
-start = time.time()
-for _ in range(100):
-    ans = part1(False)
-end = time.time()
-timings.append(["Day 3", "Part 1", ans, (end - start) / 100])
+    start = time.time()
+    for _ in range(100):
+        ans = part2(False)
+    end = time.time()
+    timings.append(["Day 3", "Part 2", ans, (end - start) / 100])
 
-start = time.time()
-for _ in range(100):
-    ans = part2(False)
-end = time.time()
-timings.append(["Day 3", "Part 2", ans, (end - start) / 100])
-
-print(part1(False))
-print(part2(False))

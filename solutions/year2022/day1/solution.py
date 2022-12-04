@@ -1,6 +1,7 @@
 import time
-
 from input_formatter import get_input_as_numbers
+
+timings = []
 
 
 def part1(is_sample):
@@ -32,20 +33,20 @@ def part2(is_sample):
     return sum(sorted(max_calories, reverse=True)[0:3])
 
 
-timings = []
+if __name__ == '__main__':
+    print(part1(False))
+    print(part2(False))
+else:
+    start = time.time()
+    for _ in range(100):
+        ans = part1(False)
+    end = time.time()
+    timings.append(["Day 1", "Part 1", ans, (end - start) / 100])
 
-start = time.time()
-for _ in range(100):
-    ans = part1(False)
-end = time.time()
-timings.append(["Day 1", "Part 1", ans, (end - start) / 100])
+    start = time.time()
+    for _ in range(100):
+        ans = part2(False)
+    end = time.time()
+    timings.append(["Day 1", "Part 2", ans, (end - start) / 100])
 
-start = time.time()
-for _ in range(100):
-    ans = part2(False)
-end = time.time()
-timings.append(["Day 1", "Part 2", ans, (end - start) / 100])
-
-print(part1(False))
-print(part2(False))
 

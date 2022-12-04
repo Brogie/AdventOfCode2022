@@ -13,10 +13,12 @@ download your input text file and ask you to paste in the sample provided.
 ## Timing
 | Day   | Part             |   Answer |        Time |
 |-------|------------------|----------|-------------|
-| Day 1 | Part 1           |    67622 | 0.0012511   |
-| Day 1 | Part 2           |   201491 | 0.00117693  |
-| Day 2 | Part 1           |    14163 | 0.00112821  |
-| Day 2 | Part 2           |    12091 | 0.00096205  |
-| Day 2 | Part 2 (Refined) |    12091 | 0.000505967 |
-| Day 3 | Part 1           |     7763 | 0.000292549 |
-| Day 3 | Part 2           |     2569 | 0.00051348  |
+| Day 1 | Part 1           |    67622 | 0.00113823  |
+| Day 1 | Part 2           |   201491 | 0.00105523  |
+| Day 2 | Part 1           |    14163 | 0.00094569  |
+| Day 2 | Part 2           |    12091 | 0.000814881 |
+| Day 2 | Part 2 (Refined) |    12091 | 0.00044693  |
+| Day 3 | Part 1           |     7763 | 0.000292671 |
+| Day 3 | Part 2           |     2569 | 0.00047251  |
+| Day4  | Part 1           |      532 | 0.00212646  |
+| Day4  | Part 2           |      854 | 0.00175786  |
