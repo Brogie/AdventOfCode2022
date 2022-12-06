@@ -1,5 +1,4 @@
 import time
-from collections import Counter
 
 from input_formatter import get_input_raw
 
@@ -12,7 +11,7 @@ def part1(is_sample):
     for i in range(3, len(signal)):
         sample = sample[1:]
         sample += signal[i]
-        if len(Counter(sample)) == 4:
+        if len(set(sample)) == 4:
             return i + 1
     return "Not Found"
 
@@ -23,7 +22,7 @@ def part2(is_sample):
     for i in range(13, len(signal)):
         sample = sample[1:]
         sample += signal[i]
-        if len(Counter(sample)) == 14:
+        if len(set(sample)) == 14:
             return i + 1
     return "Not Found"
 
