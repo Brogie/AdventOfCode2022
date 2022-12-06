@@ -13,14 +13,18 @@ download your input text file and ask you to paste in the sample provided.
 ## Timing
 | Day   | Part             | Answer    |        Time |
 |-------|------------------|-----------|-------------|
-| Day 1 | Part 1           | 67622     | 0.00125296  |
-| Day 1 | Part 2           | 201491    | 0.00122081  |
-| Day 2 | Part 1           | 14163     | 0.00120177  |
-| Day 2 | Part 2           | 12091     | 0.00100325  |
-| Day 2 | Part 2 (Refined) | 12091     | 0.00052052  |
-| Day 3 | Part 1           | 7763      | 0.000307672 |
-| Day 3 | Part 2           | 2569      | 0.000555747 |
-| Day4  | Part 1           | 532       | 0.002549    |
-| Day4  | Part 2           | 854       | 0.00192814  |
-| Day5  | Part 1           | WSFTMRHPP | 0.00123521  |
-| Day5  | Part 2           | GSLCMFBRP | 0.00111397  |
+| Day 1 | Part 1           | 67622     | 0.00128526  |
+| Day 1 | Part 2           | 201491    | 0.00131837  |
+| Day 2 | Part 1           | 14163     | 0.00111996  |
+| Day 2 | Part 2           | 12091     | 0.00105328  |
+| Day 2 | Part 2 (Refined) | 12091     | 0.00059236  |
+| Day 3 | Part 1           | 7763      | 0.000333841 |
+| Day 3 | Part 2           | 2569      | 0.0005479   |
+| Day4  | Part 1           | 532       | 0.00261232  |
+| Day4  | Part 2           | 854       | 0.0021077   |
+| Day5  | Part 1           | WSFTMRHPP | 0.00131565  |
+| Day5  | Part 2           | GSLCMFBRP | 0.00115806  |
+| Day6  | Part 1           | 1238      | 0.00195669  |
+| Day6  | Part 2           | 3037      | 0.00657544  |
+
+Total time (For only submitted stars): 0.021384475231170652
