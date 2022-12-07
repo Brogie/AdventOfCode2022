@@ -74,7 +74,7 @@ def generate_solution_file(day, year):
     Path(f"solutions/year{year}/day{day}").mkdir(exist_ok=True)
 
     with open("template.py", "r+") as f:
-        template = f.read().replace('Day x', f'Day{day}')
+        template = f.read().replace('Day x', f'Day {day}')
         with open(f"solutions/year{year}/day{day}/solution.py", "x") as s:
             s.write(template)
 

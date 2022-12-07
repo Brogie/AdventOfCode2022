@@ -11,20 +11,22 @@ To auto download and set up a puzzle simply run `python main.py 3` where 3 is th
 download your input text file and ask you to paste in the sample provided.
 
 ## Timing
-| Day   | Part             | Answer    |        Time |
+| Day   | Part             | Answer    |   Time (ms) |
 |-------|------------------|-----------|-------------|
-| Day 1 | Part 1           | 67622     | 0.00117315  |
-| Day 1 | Part 2           | 201491    | 0.00119532  |
-| Day 2 | Part 1           | 14163     | 0.00116205  |
-| Day 2 | Part 2           | 12091     | 0.00103524  |
-| Day 2 | Part 2 (Refined) | 12091     | 0.000522318 |
-| Day 3 | Part 1           | 7763      | 0.000344079 |
-| Day 3 | Part 2           | 2569      | 0.00058166  |
-| Day4  | Part 1           | 532       | 0.00255047  |
-| Day4  | Part 2           | 854       | 0.00196732  |
-| Day5  | Part 1           | WSFTMRHPP | 0.00120655  |
-| Day5  | Part 2           | GSLCMFBRP | 0.0010624   |
-| Day6  | Part 1           | 1238      | 0.000470159 |
-| Day6  | Part 2           | 3037      | 0.00183933  |
+| Day 1 | Part 1           | 67622     |       1.222 |
+| Day 1 | Part 2           | 201491    |       1.171 |
+| Day 2 | Part 1           | 14163     |       1.156 |
+| Day 2 | Part 2           | 12091     |       1.053 |
+| Day 2 | Part 2 (Refined) | 12091     |       0.563 |
+| Day 3 | Part 1           | 7763      |       0.302 |
+| Day 3 | Part 2           | 2569      |       0.474 |
+| Day 4 | Part 1           | 532       |       2.277 |
+| Day 4 | Part 2           | 854       |       2.154 |
+| Day 5 | Part 1           | WSFTMRHPP |       1.261 |
+| Day 5 | Part 2           | GSLCMFBRP |       1.069 |
+| Day 6 | Part 1           | 1238      |       0.443 |
+| Day 6 | Part 2           | 3037      |       1.794 |
+| Day 7 | Part 1           | 1454188   |       0.865 |
+| Day 7 | Part 2           | 4183246   |       0.83  |
 
-Total time (For only submitted stars): 0.014587726593017577
+Total time (For only submitted stars): 0.016 second(s)                

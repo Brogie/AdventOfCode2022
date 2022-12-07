@@ -49,10 +49,10 @@ else:
     for _ in range(100):
         ans = part1(False)
     end = time.time()
-    timings.append(["Day4", "Part 1", ans, (end - start) / 100])
+    timings.append(["Day 4", "Part 1", ans, (end - start) / 100])
 
     start = time.time()
     for _ in range(100):
         ans = part2(False)
     end = time.time()
-    timings.append(["Day4", "Part 2", ans, (end - start) / 100])
+    timings.append(["Day 4", "Part 2", ans, (end - start) / 100])
