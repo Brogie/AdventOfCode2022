@@ -30,6 +30,22 @@ def get_deliminated_input(day, year, is_sample, deliminator):
     return output
 
 
+def get_grid(day, year, is_sample):
+    output = []
+    for line in get_input(day, year, is_sample):
+        output.append(list(line))
+
+    return output
+
+
+def get_grid_as_numbers(day, year, is_sample):
+    output = []
+    for line in get_input(day, year, is_sample):
+        output.append([int_or_null(x) for x in list(line)])
+
+    return output
+
+
 def int_or_null(value):
     try:
         int(value)

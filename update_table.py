@@ -6,6 +6,7 @@ import solutions.year2022.day4.solution
 import solutions.year2022.day5.solution
 import solutions.year2022.day6.solution
 import solutions.year2022.day7.solution
+import solutions.year2022.day8.solution
 
 headers = ["Day", "Part", "Answer", "Time (ms)"]
 data = solutions.year2022.day1.solution.timings + \
@@ -14,7 +15,8 @@ data = solutions.year2022.day1.solution.timings + \
        solutions.year2022.day4.solution.timings + \
        solutions.year2022.day5.solution.timings + \
        solutions.year2022.day6.solution.timings + \
-       solutions.year2022.day7.solution.timings
+       solutions.year2022.day7.solution.timings + \
+       solutions.year2022.day8.solution.timings
 
 total = 0
 for time in data:
