@@ -1,22 +1,15 @@
 from tabulate import tabulate
-import solutions.year2022.day1.solution
-import solutions.year2022.day2.solution
-import solutions.year2022.day3.solution
-import solutions.year2022.day4.solution
-import solutions.year2022.day5.solution
-import solutions.year2022.day6.solution
-import solutions.year2022.day7.solution
-import solutions.year2022.day8.solution
+import solutions.year2023.day1.solution
+import solutions.year2023.day2.solution
+import solutions.year2023.day3.solution
+import solutions.year2023.day4.solution
 
 headers = ["Day", "Part", "Answer", "Time (ms)"]
-data = solutions.year2022.day1.solution.timings + \
-       solutions.year2022.day2.solution.timings + \
-       solutions.year2022.day3.solution.timings + \
-       solutions.year2022.day4.solution.timings + \
-       solutions.year2022.day5.solution.timings + \
-       solutions.year2022.day6.solution.timings + \
-       solutions.year2022.day7.solution.timings + \
-       solutions.year2022.day8.solution.timings
+data = solutions.year2023.day1.solution.timings + \
+       solutions.year2023.day2.solution.timings + \
+       solutions.year2023.day3.solution.timings + \
+       solutions.year2023.day4.solution.timings
+
 
 total = 0
 for time in data:
@@ -26,7 +19,7 @@ for time in data:
 
 table = tabulate(data, headers, tablefmt="github")
 
-with open("README.md", "r+") as f:
+with open("README.md", "r+", encoding="utf8") as f:
     old = f.read()  # read everything in the file
     f.seek(0)
     readme_text = old.split("## Timing")[0]
